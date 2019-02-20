@@ -2,7 +2,15 @@
   "services": {
     "monitor-rest": {
       "type": "rest",
-      "end-point": "https://reqres.in/api/users?page=2"
+      "end-point": "https://httpbin.org/ip",
+      "return-code": 200,
+      "method": "get"
+    },
+    "local-redis": {
+      "type": "redis",
+      "host": "localhost",
+      "port": 6379,
+      "db": 0
     }
   }
 }
